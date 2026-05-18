@@ -63,11 +63,11 @@ par(mfrow = c(2, 3),
     mar = c(6, 4, 3, 1))  # más espacio vertical
 
 
-tabla_genero <- table(datos$genero)
-prop_genero <- prop.table(tabla_genero)*100
-
 
 # Género + Gráfico
+
+tabla_genero <- table(datos$genero)
+prop_genero <- prop.table(tabla_genero)*100
 
 tabla_genero
 round(prop_genero, 2)
